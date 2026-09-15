@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    color:blueviolet;
+}
+
+header {
+    border-bottom-style: dotted ;
+    border-bottom-width:3px ;
+    border-bottom-color:rgb(99, 4, 209);
+    border-left-style: dotted;
+    border-left-width: 3px;
+    border-left-color:rgb(99, 4, 209) ;
+    border-right-style: dotted;
+    border-right-width: 3px;
+    border-right-color:rgb(99, 4, 209) ;
+    border-top-style: dotted;
+    border-top-width: 3px;
+    border-top-color:rgb(99, 4, 209) ;
+}
+
+h1 {
+    color:darkgreen;
+    font-family: "Sofia", sans-serif;
+    /**font-family:Arial, Helvetica, sans-serif ;**/
+    font-size: 45px;
+
+}
+
+main{
+    border-bottom-style: dotted ;
+    border-bottom-width:3px ;
+    border-bottom-color:rgb(99, 4, 209);
+    border-left-style: dotted;
+    border-left-width: 3px;
+    border-left-color:rgb(99, 4, 209) ;
+    border-right-style: dotted;
+    border-right-width: 3px;
+    border-right-color:rgb(99, 4, 209) ;
+    border-top-style: dotted;
+    border-top-width: 3px;
+    border-top-color:rgb(99, 4, 209) ;
+}
+
+footer{
+    margin-top: 30px;
+    border-top: dashed 3px rgb(99, 4, 209);
+    text-align: right;
+}
