@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title> Formulario de cadastro </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta name="description" content="Modelo de fromulario em HTML teste">
+
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        .adiconar_borda{
+            border-width:2px ;
+            border-style:solid ;
+            border-color:blueviolet;
+        }
+       
+    </style>
+</head>
+ <body class="bg-success">
+    <!-- Area proncipal do site com header main footer Div 1 -->
+<div id="div_principal" class="container adiconar_borda bg-success">
+    <!-- 
+    Header pg
+    [] Logotipo 
+    [] Titulo 
+    [] Menu principal 
+    [] Login/ Logout -->
+    <header class="adiconar_borda">
+        <div class="row">
+            <div class="col-12">
+                Logo<br>Titulo
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                Menu principal
+            </div>
+        
+        <div class="col-3">
+            Login<br>logout<br>cadastrar 
+        </div>
+        </div>
+
+
+
+    </header>
+    <!-- main pg -->
+    <main class="adiconar_borda">
+        <!--Formulario de Cadastro-->
+        <form action="cadastro/" method="get" target="_blank"> 
+            <!--Nome completo-->
+            <div class="m-3">
+                <label class="form-label"
+                for="nome">Nome:</label>
+                <input class="form-control"
+                type="text" id="nome" name="nome"
+                required placeholder="EX: Jorge Luiz da Silva"
+                title="Infome seu nome completo (campo obrigatorio)" >
+            </div>
+            <!--Email/Login-->
+            <div class="m-3">
+                <label class="form-label"
+                 for="email">Email de Login:</label>
+                <input class="form-control"type="emial" id="email" name="email"
+                required placeholder="EX:Jorgedasilva@gmail.com"
+                title="Infome seu endereço de email (Campo Obrigatorio)" >
+            </div>
+            <!--Senha-->
+            <div class="m-3">
+                <label class="form-label"
+                for="senha">Senha:</label>
+                <input class="form-control" type="password" id="senha" name="senha"
+                required minlength="6"
+                placeholder="EX:Cappudo2026!"
+                title="Digite sua senha (Campo Obrigatorio)" >
+            </div>
+            <!--Confirmar senha-->
+            <div class="m-3">
+                <label class="form-label"
+                for="confirmar_senha">Confirmação de senha:</label>
+                <input class="form-control" type="text" id="confirmação" name="confirmação"
+                required minlength="6"
+                placeholder="EX:Cappudo2026!"
+                title="Confirme sua senha (Campo Obrigatorio)">
+            </div>
+            <!--CPF-->
+            <div class="m-3">
+                <label class="form-label"
+                 for="cpf">CPF:</label>
+                <input class="form-control" type="text" id="cpf" name="cpf"
+                required pattern="/d{3}./d{3}./d{3}-/d{2}"
+                placeholder="EX:123.456.789-10"
+                title="Formato:000.000.000-00">
+            </div>
+            <!--Telefone-->
+            <div class="m-3">
+                <label class="form-label"
+                for="tell">Telefone:</label>
+                <input class="form-control" type="text" id="telefone" name="tell" name="telefone"
+                placeholder="(24)99999-9999"
+                pattern="\(\d{2}\)\s?\\d{4,5}-?\{4}">
+            </div>
+
+            <!--CEP-->
+            <div class="m-3">
+                <label class="form-label"
+                for="cep">CEP:</label>
+                <input class="form-control" type="text" id="cep" name="cep"
+                required 
+                placeholder="EX:25644-030"
+                title="Digite seu CEP">  
+            </div>
+
+            <!--Logradouro-->
+            <div class="m-3">
+                <label class="form-label"
+                for="nome">Endereço:</label>
+                <input class="form-control" type="text" id="ld" name="ld"
+                required placeholder="EX:Rua Olavo Billac"
+                title="Infome seu endereço">
+            </div>
+
+            <!--Complemento-->
+            <div class="m-3">
+                <label class="form-label"
+                for="nome">Compl:</label>
+                <input class="form-control" type="text" id="complemento" name="complemento"
+                required placeholder="EX: Portão verde "
+                title="Digite um comprimento (Caso tenha )"><br>
+            </div>
+
+            <!--Bairro-->
+            <div class="m-3">
+                <label class="form-label"
+                 for="nome">Bairro:</label>
+                <input class="form-control" type="text" id="complemento" name="complemento"
+                required placeholder="EX: Aguas lindas"
+                title="Infome seu bairro"><br>
+            </div>
+
+            <!--Cidade-->
+            <div class="m-3">
+                <label class="form-label" 
+                 for="nome">Cidade:</label>
+                <input class="form-control" type="text" id="cidade" name="cidade"
+                required placeholder="EX: Petrópolis "
+                title="Infome sua cidade ">
+            </div>
+
+            <!--Estado-->
+            <div class="m-3">
+                <label class="form-label"
+                for="nome">Estado:</label>
+                <input class="form-control" type="text" id="estado" name="estado"
+                required placeholder="EX: RJ"
+                title="Informe seu estado ">
+            </div>
+
+            <div class="m-3 row ">
+                <div class="col-6">
+                    <button type="submit"
+                    class="form-control btn btn-outline-primary text-dark">
+                        Enviar
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button type="reset"
+                        class="form-control btn-outline-primary text-dark">
+                        limpar
+                    </button>
+                </div>
+            </div>
+
+
+
+        </form>
+
+
+
+    </main>
+    <!--
+    Footer pg  
+    [] Menu footer 
+    [] Contato 
+    [] Copyrigth 
+    [] Rede Social-->
+    <footer class="adiconar_borda">
+        <div class="row">
+            <div class="col-4">
+                Menu Secundario 
+            </div>
+            <!--Contatos Copyrigth -->
+            <div class="col-5">
+                
+                <a href="https://wa.me/+5524992788912" target="_blank" rel="noopener noreferrer"></a>
+                <i class="bi bi-whatsapp"> </i> Whatsapp
+            </div>
+            <!--Redes Sociais -->
+            <div class="col-3">
+                <a href="https://github.com/Ezequiel-8690" target="_blank"class="text-dark text-decoration-none">
+                    <i class="bi bi-github"> </i> Github
+                </a><br>
+
+                <a href="https://instagram.com.br" target="_blank" class="text-dark text-decoration-none">
+                    <i class="bi bi-instagram"> </i> Instagram
+                </a><br>
+
+                <a href="https://youtube.com.br" target="_blank" class="text-dark text-decoration-none">
+                    <i class="bi bi-youtube"> </i> Youtube
+                </a>
+            </div>
+        </div>
+</footer>
+<!-- Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>
