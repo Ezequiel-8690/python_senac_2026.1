@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Receitas 
+{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+
+        <h1 class="mb-4">Receitas</h1>
+
+        <ul>
+        {% for receita in receitas %}
+            <li> {{ receita.titulo }} -
+                <a href="{  % url 'receitas:detalhe_receita' receita.pk %}">Exibir</a>
+            {%empty%}
+            <li> Não há receitas cadastradas </li> </li>
+        {%endfor%}
+        </ul>
+    </div>
+{% endblock %}
